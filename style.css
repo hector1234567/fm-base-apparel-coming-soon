@@ -46,6 +46,7 @@ body {
   background-image: url(images/bg-pattern-desktop.svg);
   background-size: 57.6388889% 100%;
   background-repeat: no-repeat;
+  padding-left: 2rem;
 }
 
 .base-apparel__content {
@@ -183,4 +184,53 @@ body {
 .form__input:focus:invalid ~ .form__error-message,
 .form__input:focus:invalid ~ .form__error-icon {
   display: initial;
+}
+
+@media screen and (max-width: 822px) {
+  .base-apparel {
+    grid-template-columns: 100%;
+    grid-template-rows: 8.4rem 25rem auto;
+    background-size: 100% 100%;
+    padding-left: 0;
+  }
+
+  .base-apparel__image {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-image: url(images/hero-mobile.jpg);
+    background-position: top;
+    background-size: cover;
+  }
+
+  .base-apparel__logo {
+    margin-right: 0;
+    width: 100%;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 3.2rem;
+  }
+
+  .base-apparel__logo img {
+    width: 10rem;
+  }
+
+  .base-apparel__content {
+    margin-right: 0;
+    width: 100%;
+    margin-left: 0;
+    padding: 6.4rem 3.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .base-apparel__content > * {
+    max-width: 50rem;
+  }
+
+  .base-apparel__heading {
+    font-size: 4rem;
+  }
 }
