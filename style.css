@@ -109,7 +109,7 @@ body {
   padding-left: 3.2rem;
   padding-right: 14rem;
   border-radius: 5.6rem;
-  border: 0.1rem solid var(--Desaturated-Red);
+  border: 0.1rem solid hsla(0, 36%, 70%, 0.7);
   background-color: transparent;
   margin-right: -10rem;
   width: 100%;
